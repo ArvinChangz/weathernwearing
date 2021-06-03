@@ -1,0 +1,25 @@
+<resources>
+    <!-- entries是寫給使用者看的，values是內部傳值的參數 -->
+
+    <!-- Gender Preference -->
+    <string-array name="gender_entries">
+        <item>男性</item>
+        <item>女性</item>
+    </string-array>
+
+    <string-array name="gender_values">
+        <item>男性</item>
+        <item>女性</item>
+    </string-array>
+
+    <!-- Unit Preference -->
+    <string-array name="unit_entries">
+        <item>攝氏</item>
+        <item>華氏</item>
+    </string-array>
+
+    <string-array name="unit_values">
+        <item>攝氏</item>
+        <item>華氏</item>
+    </string-array>
+</resources>

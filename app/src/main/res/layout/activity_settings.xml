@@ -1,0 +1,477 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_Settings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#e3eeff"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="設定"
+        android:textSize="24sp"
+        android:textColor="#696969"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_Settings"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ffffff"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintVertical_bias="0" />
+    <TextView
+        android:id="@+id/ddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="每日通知"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintEnd_toEndOf="@id/box"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@id/box"
+        app:layout_constraintTop_toTopOf="@id/box"
+        app:layout_constraintVertical_bias="0.0" />
+    <View
+        android:id="@+id/an"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e3eeff"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintEnd_toEndOf="@id/box"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/box"
+        app:layout_constraintTop_toBottomOf="@id/ddd"
+        app:layout_constraintVertical_bias="0.01" />
+    <TextView
+        android:id="@+id/textView_setTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintEnd_toEndOf="@id/box"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/box"
+        app:layout_constraintTop_toBottomOf="@+id/ddd"
+        app:layout_constraintVertical_bias="0.25" />
+    <ImageView
+        android:id="@+id/button_timePicker"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@id/s"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/box"
+        app:layout_constraintTop_toBottomOf="@+id/textView_setTime"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/ring1" />
+    <Space
+        android:id="@+id/s"
+        android:layout_width="3dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@+id/bt"
+        app:layout_constraintStart_toEndOf="@id/button_timePicker"
+        app:layout_constraintTop_toBottomOf="@+id/textView_setTime"
+        app:layout_constraintVertical_bias="0.22" />
+    <TextView
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="設定時間"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/s"
+        app:layout_constraintTop_toBottomOf="@+id/textView_setTime"
+        app:layout_constraintVertical_bias="0.22" />
+    <ImageView
+        android:id="@+id/button_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@id/ss"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_setTime"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/closering" />
+    <Space
+        android:id="@+id/ss"
+        android:layout_width="3dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintEnd_toStartOf="@+id/bc"
+        app:layout_constraintStart_toEndOf="@id/button_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_setTime"
+        app:layout_constraintVertical_bias="0.22" />
+    <TextView
+        android:id="@+id/bc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="關閉通知"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintEnd_toEndOf="@+id/box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/ss"
+        app:layout_constraintTop_toBottomOf="@+id/textView_setTime"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <ImageView
+        android:id="@+id/boxxxx"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ffffff"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/box"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/dddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="降雨提醒"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/boxxxx"
+        app:layout_constraintEnd_toEndOf="@id/boxxxx"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@id/boxxxx"
+        app:layout_constraintTop_toTopOf="@id/boxxxx"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/ann"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e3eeff"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintBottom_toBottomOf="@id/boxxxx"
+        app:layout_constraintEnd_toEndOf="@id/boxxxx"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/boxxxx"
+        app:layout_constraintTop_toBottomOf="@id/dddd"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+        android:id="@+id/textView_immediate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@id/boxxxx"
+        app:layout_constraintEnd_toEndOf="@id/boxxxx"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/boxxxx"
+        app:layout_constraintTop_toBottomOf="@+id/dddd"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageView
+        android:id="@+id/button_immediate"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="@id/boxxxx"
+        app:layout_constraintEnd_toStartOf="@id/sss"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/boxxxx"
+        app:layout_constraintTop_toBottomOf="@+id/textView_immediate"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/ring1" />
+
+    <Space
+        android:id="@+id/sss"
+        android:layout_width="3dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/boxxxx"
+        app:layout_constraintEnd_toStartOf="@+id/btt"
+        app:layout_constraintStart_toEndOf="@id/button_immediate"
+        app:layout_constraintTop_toBottomOf="@+id/textView_immediate"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <TextView
+        android:id="@+id/btt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="開啟通知"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/boxxxx"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/sss"
+        app:layout_constraintTop_toBottomOf="@+id/textView_immediate"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <ImageView
+        android:id="@+id/button_immediate_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="@id/boxxxx"
+        app:layout_constraintEnd_toStartOf="@id/ssss"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_immediate"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/closering" />
+
+    <Space
+        android:id="@+id/ssss"
+        android:layout_width="3dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/boxxxx"
+        app:layout_constraintEnd_toStartOf="@+id/bcc"
+        app:layout_constraintStart_toEndOf="@id/button_immediate_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_immediate"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <TextView
+        android:id="@+id/bcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="關閉通知"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/boxxxx"
+        app:layout_constraintEnd_toEndOf="@+id/boxxxx"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/ssss"
+        app:layout_constraintTop_toBottomOf="@+id/textView_immediate"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <ImageView
+        android:id="@+id/boxxx"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#ffffff"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boxxxx"
+        app:layout_constraintVertical_bias="0" />
+    <TextView
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="偏好"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/boxxx"
+        app:layout_constraintEnd_toEndOf="@id/boxxx"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@id/boxxx"
+        app:layout_constraintTop_toTopOf="@id/boxxx"
+        app:layout_constraintVertical_bias="0.0" />
+    <View
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e3eeff"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintBottom_toBottomOf="@id/boxxx"
+        app:layout_constraintEnd_toEndOf="@id/boxxx"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/boxxx"
+        app:layout_constraintTop_toBottomOf="@id/change"
+        app:layout_constraintVertical_bias="0.01" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boxxx"
+        app:layout_constraintEnd_toEndOf="@id/boxxx"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/boxxx"
+        app:layout_constraintTop_toBottomOf="@+id/all"
+        app:layout_constraintVertical_bias="0">
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="一般體質"
+            android:textColor="#696969"
+            android:layout_marginEnd="5dp"/>
+        <RadioButton
+            android:id="@+id/hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="怕熱體質"
+            android:textColor="#696969"
+            android:layout_marginEnd="5dp"/>
+        <RadioButton
+            android:id="@+id/cold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="怕冷體質"
+            android:textColor="#696969"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="儲存"
+        android:textColor="#696969"
+        app:layout_constraintBottom_toBottomOf="@id/boxxx"
+        app:layout_constraintEnd_toEndOf="@id/boxxx"
+        app:layout_constraintStart_toStartOf="@id/boxxx"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:id="@+id/boxx"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#ffffff"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boxxx"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="關於"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/boxx"
+        app:layout_constraintEnd_toEndOf="@id/boxx"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@id/boxx"
+        app:layout_constraintTop_toTopOf="@id/boxx"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/al"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e3eeff"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintBottom_toBottomOf="@id/boxx"
+        app:layout_constraintEnd_toEndOf="@id/boxx"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/boxx"
+        app:layout_constraintTop_toBottomOf="@id/about"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="資料來源：中央氣象局及行政院環境環保署"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/boxx"
+        app:layout_constraintEnd_toEndOf="@id/boxx"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/boxx"
+        app:layout_constraintTop_toBottomOf="@id/al"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/dataa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="服裝廠商：Uniqlo , Net"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/boxx"
+        app:layout_constraintEnd_toEndOf="@id/boxx"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/data"
+        app:layout_constraintTop_toBottomOf="@id/data"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/set_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="button_timePicker,s,bt" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/cancel_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="button_cancel,ss,bc" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/set_gg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="button_immediate,sss,btt"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/cancel_gg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="button_immediate_cancel,ssss,bcc"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

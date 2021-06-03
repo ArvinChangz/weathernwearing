@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Weather&#032;&#038;&#032;Wearing</string>
+    <string name="show_app_name">天氣穿搭</string>
+    <string name="title_home">Weather&#032;&#038;&#032;Wearing</string>
+    <string name="title_bottom_bar_home">主頁</string>
+    <string name="title_weathermap">測站地圖</string>
+    <string name="title_bottom_bar_weathermap">測站地圖</string>
+    <string name="title_weatherdetail">天氣預報</string>
+    <string name="title_bottom_bar_weatherdetail">天氣預報</string>
+    <string name="bar_search_word">地點管理</string>
+    <string name="bar_setting">設定</string>
+    <string name="manage_location_activity_title">管理地點</string>
+    <string name="settings_activity_title">設定</string>
+
+    <!-- 以下為設定參數名稱  -->
+
+    <!-- Preference Titles -->
+    <string name="system_header">參數設定</string>
+    <string name="notification_header">通知設定</string>
+    <string name="others_header">其他</string>
+
+    <!-- System Preferences -->
+    <string name="gender_title">人偶性別</string>
+    <string name="unit_title">單位設定</string>
+
+    <!-- Notification Preferences -->
+    <string name="notification_now_weather_title">即時天氣</string>
+    <string name="notification_now_weather_summary_on">當日天氣狀況、雨量通知</string>
+    <string name="notification_now_weather_summary_off">關閉</string>
+
+    <string name="notification_remind_title">天氣小提醒</string>
+    <string name="notification_remind_summary_on">當日須注意之天氣狀況</string>
+    <string name="notification_remind_summary_off">關閉</string>
+
+    <!-- Others Preferences -->
+    <string name="about_us_title"></string>
+
+
+</resources>
