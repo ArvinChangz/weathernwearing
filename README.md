@@ -30,21 +30,21 @@
 
 首頁 (根據設定之測站位置提供穿搭服務)
 
-<img src="image/mainpage1.jpg" height="500px">&nbsp;&nbsp;<img src="image/mainpage2.jpg" height="500px">
+<img src="image/mainpage1.jpg" height="800px">&nbsp;&nbsp;<img src="image/mainpage2.jpg" height="800px">
 
 測站地圖頁面 (顯示設定的測站位置、資訊以及周遭地圖)
 
-<img src="image/map2.jpg" height="500px">&nbsp;&nbsp;<img src="image/map.jpg" height="500px">
+<img src="image/map2.jpg" height="800px">&nbsp;&nbsp;<img src="image/map.jpg" height="800px">
 
 測站管理頁面 (透過地址、座標或取得現在位置搜尋測站)
 
-<img src="image/add_station.jpg" height="500px">&nbsp;&nbsp;<img src="image/edit_station.jpg" height="500px">
+<img src="image/add_station.jpg" height="800px">&nbsp;&nbsp;<img src="image/edit_station.jpg" height="800px">
 
 天氣資訊頁面 (根據設定之測站位置顯示即時天氣、最高溫最低溫、天氣預報等資訊)
 
-<img src="image/weather2.jpg" height="500px">&nbsp;&nbsp;<img src="image/weather.jpg" height="500px">
+<img src="image/weather2.jpg" height="800px">&nbsp;&nbsp;<img src="image/weather.jpg" height="800px">
 
 溫度舒適度指標頁面 
 
-<img src="image/level.jpg" height="500px">
+<img src="image/level.jpg" height="800px">
 
